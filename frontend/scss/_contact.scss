@@ -1,14 +1,8 @@
 .page-contact {
   .card {
-    position: relative;
-    overflow: visible;
     padding-top: 16px;
 
     .icon-wrapper {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
       background: #294966;
       border-radius: 14px;
       display: flex;

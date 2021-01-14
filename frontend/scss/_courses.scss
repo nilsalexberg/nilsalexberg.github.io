@@ -1,0 +1,42 @@
+.page-courses {
+  header {
+    background: url(../images/courses/header-bg.png);
+    background-position-x: right;
+  }
+
+  .test-card {
+    background-image: url(../images/courses/test-bg.png);
+  }
+
+  .card-overflow {
+    padding-top: 24px;
+    margin-top: 24px;
+  
+    .overflow {
+      border-radius: 14px;
+      height: 48px;
+      width: 48px;
+    }
+  }
+
+  .how-it-works {
+    .card {
+      background: #FAFAFA;
+
+      .badge {
+        background: #04C56B;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px;
+      }
+    }
+  }
+
+  .our-courses {
+    .overflow {
+      padding: 8px;
+    }
+  }
+}
