@@ -1,7 +1,11 @@
 .page-courses {
   header {
-    background: url(../images/courses/header-bg.png);
+    background-image: url(../images/courses/header.png);
     background-position-x: right;
+    height: 397px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .test-card {
