@@ -48,4 +48,39 @@
       left: 24px;
     }
   }
+
+  .how-it-works {
+    font-size: 18px;
+    line-height: 23px;
+    color: #8395A7;
+
+    .badge {
+      background: #C8D6E5;
+      color: #576574;
+      border-radius: 12px;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 10px;
+      min-height: 40px;
+      min-width: 40px;
+    }
+  }
+
+  .testimonials {
+    .card {
+      position: relative;
+      overflow: visible;
+      margin-top: 50px;
+
+      img {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .card-body {
+        padding-top: 60px;
+      }
+    }
+  }
 }
