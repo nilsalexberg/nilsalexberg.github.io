@@ -1,3 +1,13 @@
+$success: #04C56B !default;
+$primary: #54A0FF !default;
+$warning: #F88C2A !default;
+$danger: #EF4D57 !default;
+$info: #5CE5BD !default;
+$dark: #294966 !default;
+$secondary: #8395A7 !default;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
 @import 'global';
 @import 'nav';
 @import 'footer';
