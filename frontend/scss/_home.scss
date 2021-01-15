@@ -3,6 +3,27 @@
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
+    height: 397px;
+    padding: 24px 0;
+    align-items: center;
+    
+    @media screen and (max-width: 767px) {
+      background-position-x: 82%;
+      align-items: flex-start;
+      
+      h2 {
+        font-size: 24px;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
   }
 
   .test-card {
