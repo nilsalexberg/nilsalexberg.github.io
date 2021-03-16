@@ -1,312 +1,1090 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br" itemscope itemtype="http://schema.org/WebPage">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
-    <link href='static/website/owl-carousel/assets/owl.carousel.min.css' rel='stylesheet' type='text/css'>
-    <link href='static/website/css/app.css' rel='stylesheet' type='text/css'>
-    <title>
-      Universidade do Intercâmbio
-    </title>
+    <link
+      href="/static/website/icomoon/style.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/static/website/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/static/website/css/app.css?v=1.0.37"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="/static/website/images/favicon.ico"
+    />
+    <title>Inscrição - Maratona Sucesso depois dos 30</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-128225652-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-128225652-1");
+    </script>
+
+    <script>
+      var countDownDate = new Date('Feb 14, 2021 23:59:59').getTime();
+    </script>
   </head>
-  <body class="page-home">
-    <nav class="navbar navbar-expand-lg sticky-top bg-transparent">
+  <body class="page-sale">
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5db8b562e4c2fa4b6bd90cae/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!-- Facebook SDK import -->
+    <div id="fb-root"></div>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "2135573636763966");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2135573636763966&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <header class="page-header text-light py-5">
       <div class="container">
-        <a class="navbar-brand p-0" href="#">
-          <img src="static/website/images/logo.png">
-        </a>
+        <div class="d-flex justify-content-center mb-4">
+          <img
+            class="img-fluid logo"
+            src="/static/website/images/logo-oce-white-short.png"
+          />
+        </div>
+        <h4 class="text-center mb-4">
+          <span class="text-success">DECLARE O FIM DO QUASE!</span><br />
+          Faça sua inscrição agora na
+          <span class="text-success">Formação Online</span>
+          de Análise Corporal do
+          <span class="text-success text-uppercase">O Corpo Explica</span>.
+        </h4>
+        <!-- <div class="row">
+          <div class="col-lg-6 d-flex align-items-center">
+            <h5 class="text-center text-warning mb-0">
+              Últimas horas para encerrar a matrícula
+            </h5>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex float-right">
+              <div class="custom-coutdown">
+                <span class="hours"></span>
+                horas
+              </div>
+              <div class="custom-coutdown">
+                <span class="minutes"></span>
+                minutos
+              </div>
+              <div class="custom-coutdown">
+                <span class="seconds"></span>
+                segundos
+              </div>
+            </div>
+          </div>
+        </div> -->
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars fa-lg"></i>
+        <div class="embed-responsive embed-responsive-16by9 my-4">
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.youtube.com/embed/bf2ADKX4qGo?rel=0&autoplay=1"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <button class="btn btn-block btn-success btn-lg" data-toggle="modal" data-target="#buy-form-modal">
+          >> GARANTIR MINHA VAGA AGORA
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <strong class="d-block d-lg-none mb-5 text-light">Universidade do Intercâmbio</strong>
-          <button class="d-block d-lg-none navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-times"></i>
+      </div>
+    </header>
+
+    <section id="description" class="py-5 bg-light-texture">
+        <img
+        class="img-fluid mb-4"
+        src="/static/website/images/human-athom.png"
+        />
+      <div class="container">
+        <div class="text-center mb-4">
+          <h4>O QUE É A FORMAÇÃO DO</h4>
+          <h1>O CORPO EXPLICA?</h1>
+        </div>
+
+        <div class="text-center mb-4">
+          <h5>A FORMAÇÃO DO O CORPO EXPLICA</h5>
+          <h5>TEM 3 OBJETIVOS</h5>
+        </div>
+
+        <div class="form-row justify-content-center align-item-center py-3">
+          <div class="col-2 d-flex flex-column justify-content-center align-items-start">
+            <img
+              class="img-fluid mr-lg-3"
+              src="/static/website/images/goal_manual.png"
+            />
+          </div>
+          <div class="col-9 d-flex flex-column justify-content-center align-items-start">
+            <h5>
+              <span class="text-green">1)</span> TE PASSAR O SEU MANUAL DE
+              FUNCIONAMENTO
+            </h5>
+            <div class="text-muted">
+              para a vida, te explicando como a sua mente funciona, quais são as
+              suas limitações, as suas dificuldades, onde estão os seus pontos
+              fortes e o que você pode fazer para ativá-los nos seus
+              relacionamentos e na sua vida profissional, te fazendo entender os
+              motivos pelos quais a sua história de vida se desenrolou dessa
+              forma e te ajudar a entender como mudar.
+            </div>
+          </div>
+        </div>
+        <div class="form-row justify-content-center align-item-center py-3">
+          <div class="col-2 d-flex flex-column justify-content-center align-items-start">
+            <img
+              class="img-fluid mr-lg-3"
+              src="/static/website/images/goal_people.png"
+            />
+          </div>
+          <div class="col-9 d-flex flex-column justify-content-center align-items-start">
+            <h5>
+              <span class="text-green">2)</span> ENTENDER AS PESSOAS AO SEU
+              REDOR
+            </h5>
+            <div class="text-muted">
+              sua família, seus amigos, seus sócios, seus funcionários, seja
+              quem for e isso vai trazer muito mais qualidade para as suas
+              relações, evitando muitas situações desagradáveis e te ajudando a
+              resolver conflitos com essas pessoas.
+            </div>
+          </div>
+        </div>
+        <div class="form-row justify-content-center align-item-center py-3">
+          <div class="col-2 d-flex flex-column justify-content-center align-items-start">
+            <img
+              class="img-fluid mr-lg-3"
+              src="/static/website/images/goal_key.png"
+            />
+          </div>
+          <div class="col-9 d-flex flex-column justify-content-center align-items-start">
+            <h5>
+              <span class="text-green">3)</span> ACESSO RÁPIDO À HISTÓRIA DAS PESSOAS
+            </h5>
+            <div class="text-muted">
+              Para quem trabalha - ou pretende trabalhar - com
+              desenvolvimento humano, imagine descobrir e acessar informações
+              valiosas sobre o seu cliente que são fundamentais para o processo
+              e que na maioria das vezes o cliente não conta e as vezes até
+              tenta esconder. E é justamente esse poder que irá fazer as pessoas
+              se impressionarem com a sua capacidade, desejarem o seu trabalho,
+              confiarem no seu atendimento e te indicarem para outras pessoas.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modules" class="py-5 text-light">
+      <div class="container mb-5">
+        <div class="text-center">
+          <h4>CONHEÇA OS MÓDULOS DA</h4>
+          <h1>FORMAÇÃO DO O CORPO EXPLICA</h1>
+        </div>
+      </div>
+
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-01.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">
+                Fundamentos científicos por trás do O Corpo Explica
+              </h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                Nesse primeiro módulo você vai entender de onde vem tudo isso
+                que nós transformamos em O Corpo Explica.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-02.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">Anatomia e Genética</h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                No módulo 2 nós vamos falar sobre anatomia e genética, depois
+                nós vamos para a explicação detalhada e bem profunda de cada
+                traço de caráter.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-03.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">Traço de Caráter Esquizoide</h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                Viver no mundo da lua para não enfrentar a realidade é uma fuga
+                que tem matado o potencial construtivo de muitos gênios da
+                atualidade. Aqui você vai descobrir profundamente tudo que
+                precisa saber sobre o Esquizoide, porque a dor da rejeição molda
+                cada parte do corpo dele para manter a mente criativa, mesmo com
+                um humor sempre ácido. Você também vai entender o que fazer para
+                estimular a genialidade dele e o que você nunca deve fazer para
+                não correr o risco de colocá-lo em uma caverna existencial
+                quando entra na dor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-04.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">Traço de Caráter Oral</h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                Esse traço é muito presente na nossa cultura e aqui você vai
+                descobrir profundamente tudo o que você precisa saber sobre o
+                Traço de Caráter Oral, porque a dor do abandono molda cada parte
+                do corpo dele para manter a mente sensível, afetiva e
+                acolhedora, mesmo correndo o risco de se sentir tão carente.
+                Você também vai entender o que fazer para estimular a capacidade
+                que ele tem de se conectar e o que você nunca deve fazer para
+                não correr o risco de colocá-lo em um poço sem fundo quando
+                entra na dor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-05.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">Traço de Caráter Psicopata</h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                Eles geralmente são vistos como os vilões da vida, mas no fundo,
+                o poder que eles têm é fundamental para qualquer construção que
+                dependa de relacionamentos e neste módulo você vai entender
+                detalhadamente como a dor da manipulação molda cada parte do
+                corpo de uma pessoa com traço de caráter Psicopata predominante.
+                Você vai descobrir o que fazer para manter a capacidade de
+                persuasão e liderança dele em alta e também, o que jamais fazer
+                para não ativar o modo guerra dele quando entra na dor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-06.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">Traço de Caráter Masoquista</h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                Talvez esse seja o traço de caráter mais mal aproveitado dentro
+                das nossas relações, tanto pessoais quanto profissionais. Esse
+                traço tem uma força e uma lealdade incríveis, mas infelizmente
+                seus recursos têm sido mal utilizados pelas pessoas. Neste
+                módulo você vai entender detalhadamente como a dor da humilhação
+                molda a mente e cada parte do corpo de uma pessoa com
+                predominância do traço de caráter Masoquista e você também vai
+                descobrir o que fazer para estimular a força, a lealdade e a
+                resiliência desse traço. E é claro, também vai descobrir o que
+                fazer para não ativar o modo cofre e caverna que ele ativa
+                quando entra na dor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-07.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">Traço de Caráter Rígido</h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                Esse é um dos traços que mais sofre com a relação expectativa
+                versus realidade. Beleza e força exterior se resumem em
+                insegurança e conflitos interiores por causa da dor da traição e
+                da exclusão que fazem eles viverem triangulando pela vida. Aqui
+                você entenderá profundamente como parte do corpo delineado e
+                forte dos rígidos se desenvolve e descobrirá o que fazer para
+                estimular a competitividade, a força, a velocidade e o poder de
+                atração que eles têm. E é claro que você também descobrirá o que
+                nunca fazer com os rígidos para não colocá-los no modo bloqueado
+                que eles ficam quando eles entram na dor desse traço.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-08.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">
+                Identifique os traços de caráter no corpo
+              </h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                Aqui você começa a ver o conhecimento entrando na prática, toda
+                aquela explicação começa a fazer sentido no corpo de toda pessoa
+                que você vê na sua frente.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-09.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">
+                Ferramenta Mapa dos Caracteres
+              </h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                No módulo 9 você vai aprender detalhadamente como fazer uma análise corporal usando o Mapa dos Caracteres, uma ferramenta exclusiva de O Corpo Explica que te permitirá analisar isoladamente seis partes do corpo, para gerar um gráfico que mostra quanto de cada um dos traços de caracteres tem na mente daquela pessoa.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-10.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">
+                Entenda o mundo emocional por trás do gráfico
+              </h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                Além de aprender a usar a ferramenta do Mapa dos Caracteres, nós
+                vamos te entregar uma estrutura de análise técnica pronta com
+                passo-a-passo pra você fazer com seus clientes e com seus
+                pacientes
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="module py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-4">
+              <img
+                class="img-fluid"
+                src="/static/website/images/modules/modulo-11.png"
+              />
+            </div>
+            <div class="col pl-0">
+              <h6 class="text-white mb-3">
+                Aprender a colocar o conhecimento em prática
+              </h6>
+              <div class="line-decorator-vertical bg-success"></div>
+              <div class="text-muted">
+                Você vai conhecer A CHAVE MESTRA, outra ferramenta exclusiva de
+                O Corpo Explica que foi criada para fazer com que cada traço de
+                caráter da mente de uma pessoa consiga se comportar utilizando
+                seus recursos diante de fatos que acontecem na vida. Neste
+                módulo você também vai aprender a combinar O Corpo Explica com
+                as técnicas que você já conhece e entender quais caminhos você
+                pode seguir para aprofundar o seu atendimento com o seu cliente
+                ainda dentro da estrutura do que O Corpo Explica oferece.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-5">
+        <h2 class="text-center">E ainda não acabou</h2>
+      </div>
+    </section>
+    <!-- End modules -->
+
+    <!-- Start bonus -->
+    <section id="bonus" class="py-5 bg-light-texture">
+      <img class="img-fluid mb-5" src="/static/website/images/bonus.png" />
+      <div class="container">
+        <h5 class="text-center mb-5 px-3">
+          #1 - ANÁLISE CORPORAL INDIVIDUAL<br class="d-lg-none"> - <s>[R$ 997,00]</s> - <span class="text-green">GRATUITO</span>
+        </h5>
+        <p class="text-secondary px-5 mb-5">
+          Uma das coisas que as pessoas mais nos pedem nas redes sociais é para serem analisadas. E, por mais que, ao fazer a Formação Online de Análise Corporal, você esteja habilitado e já consiga fazer a sua própria análise e encontrar as porcentagens corretas do seu mapa de caracteres, nós decidimos presentear todos os alunos que se matricularem nessa turma com uma sessão de análise online e individual.
+          <br><br>         
+          Um dos analistas da nossa equipe vai fazer a sua análise, montar o seu mapa de caracteres e te dar uma devolutiva pra te explicar detalhadamente como você funciona e como você pode melhorar a sua vida. Mesmo que você já tenha entendido isso durante a formação, uma perspectiva diferente pode te ajudar ainda mais.
+          <br><br>
+          E o melhor é que essas sessões são individuais, não tem outros alunos assistindo. Você vai poder rasgar o verbo, se abrir e aproveitar ao máximo
+        </p>
+      </div>
+      <div class="container">
+        <h5 class="text-center mb-5">
+          #2 MENTORIA VIDA DE ANALISTA<br class="d-lg-none"> - <s>[R$ 30.000,00]</s> - <span class="text-green">GRATUITO</span>
+        </h5>
+        <h5 class="text-center mb-5 px-3">
+          COMO ESTABELECER, ESCALAR E EXPANDIR O SEU RESULTADO COM ANÁLISE
+          CORPORAL
+        </h5>
+
+        <div class="text-center pr-4">
+          <img
+            class="img-fluid"
+            src="/static/website/images/bonus-icon-01.png"
+          />
+        </div>
+        <h3 class="text-warning text-center mb-4">ESTABELECER</h3>
+        <p class="text-secondary text-center px-5 mb-5">
+          Aqui você vai receber conteúdos e técnicas para acelerar as suas
+          primeiras vendas como Analista Corporal e se estabelecer nesse
+          mercado.
+        </p>
+       
+
+        <div class="text-center pr-4">
+          <img
+            class="img-fluid"
+            src="/static/website/images/bonus-icon-02.png"
+          />
+        </div>
+        <h3 class="text-warning text-center mb-4">ESCALAR</h3>
+        <p class="text-secondary text-center px-5 mb-5">
+          Depois de se estabelecer com Análise Corporal, você vai receber as
+          ferramentas e estratégias para definir o seu nicho, atrair as pessoas
+          certas e montar um portifólio para você multiplicar os seus resultados
+          e os de seus clientes.
+        </p>
+
+        <div class="text-center pr-4">
+          <img
+            class="img-fluid"
+            src="/static/website/images/bonus-icon-03.png"
+          />
+        </div>
+        <h3 class="text-warning text-center mb-4">EXPANDIR</h3>
+        <p class="text-secondary text-center px-5 mb-5">
+          Nessa etapa você vai entender como impulsionar o seu negócio
+          aproveitando as maiores oportunidades e demandas do mercado de Análise
+          Corporal e saber como conquistar parcerias para trazer retorno e ainda
+          mais possibilidades de crescimento na sua carreira.
+        </p>
+
+        <div class="d-flex justify-content-center mb-5">
+          <button class="btn btn-success btn-lg text-white" data-toggle="modal" data-target="#buy-form-modal">
+            >> Sim, Quero Fazer Minha Inscrição Agora
           </button>
-          <ul class="navbar-nav w-100">
-            <li class="nav-item ml-lg-5">
-              <a class="nav-link" href="index.html">Início</a>
-            </li>
-            <li class="nav-item ml-lg-4">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item dropdown ml-lg-4">
-              <a class="nav-link dropdown-toggle" href="courses.html" role="button">
-                Cursos
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="courses-mentoring.html">Mentoria em Grupo</a>
-                <a class="dropdown-item" href="courses-mentoring.html">Mentoria Premium</a>
-                <a class="dropdown-item" href="courses-iacademy.html">iAcademy</a>
-                <a class="dropdown-item" href="courses-scholarship.html">Plataforma de Bolsas</a>
-              </div>
-            </li>
-            <li class="nav-item ml-lg-4">
-              <a class="nav-link" href="ebooks.html">E-books</a>
-            </li>
-            <li class="nav-item ml-lg-4">
-              <a class="nav-link" href="podcast.html">Podcast</a>
-            </li>
-            <li class="nav-item ml-lg-4">
-              <a class="nav-link" href="about.html">Sobre</a>
-            </li>
-            <li class="nav-item ml-lg-4">
-              <a class="nav-link" href="contact.html">Contato</a>
-            </li>
-            <div class="form-group ml-auto mb-0">
-              <input class="form-control" placeholder="Pesquisar" />
-            </div>
-          </ul>
         </div>
       </div>
-    </nav>
+    </section>
+    <!-- End bonus -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner text-light">
-        <div class="carousel-item active" style="background-image: url(static/website/images/student-1.png);">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
-                <h2>Em 2021 invista no seu futuro!</h2>
-                <p>Aprenda no iAcademy uma metodologia única e eficaz para ser aprovado nas melhores oportunidades de estudar fora do país!</p>
-                <p><button class="btn btn-success btn-lg">Assine o iAcademy agora!</button></p>
-                <p>Ofertas a partir de R$ 1,50 por dia</p>
-              </div>
-            </div>
+    <!-- Start Price section -->
+    <section id="price" class="py-5">
+      <div class="container text-center">
+        <h4 class="text-light">CHEGOU A HORA DE DESCOBRIR QUANTO CUSTA A</h4>
+        <h1 class="mb-5">FORMAÇÃO DO O CORPO EXPLICA</h1>
+        <h5 class="text-white mb-4">
+          A melhor forma de falar de preço e de custo é olhar para as opções que
+          existem no mercado pra gente ter um parâmetro de comparação.
+        </h5>
+        <p class="text-white">
+          Se você for buscar um conhecimento com a mesma base que a nossa, você
+          vai achar aí uma formação em Bioenergética, que não ensina as técnicas
+          e ferramentas que a gente ensina aqui, custa mais ou menos uns 6 mil
+          reais e demora uns 5 anos, isso dá um total de 30 mil reais, fora
+          passagens, hotel e tudo mais.
+        </p>
+
+        <div class="text-center bg-light mb-4 p-2 px-lg-5">
+          <div class="text-transparent font-weight-bold px-md-5">
+            Só que nós não queremos que você gaste 30 MIL REAIS e nem que demore
+            cinco anos estudando
           </div>
         </div>
-        <div class="carousel-item" style="background-image: url(static/website/images/student-1.png);">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
-                <h2>Em 2021 invista no seu futuro!</h2>
-                <p>Aprenda no iAcademy uma metodologia única e eficaz para ser aprovado nas melhores oportunidades de estudar fora do país!</p>
-                <p><button class="btn btn-success btn-lg">Assine o iAcademy agora!</button></p>
-                <p>Ofertas a partir de R$ 1,50 por dia</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url(static/website/images/student-1.png);">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
-                <h2>Em 2021 invista no seu futuro!</h2>
-                <p>Aprenda no iAcademy uma metodologia única e eficaz para ser aprovado nas melhores oportunidades de estudar fora do país!</p>
-                <p><button class="btn btn-success btn-lg">Assine o iAcademy agora!</button></p>
-                <p>Ofertas a partir de R$ 1,50 por dia</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <p class="text-white mb-5">
+          Nós definimos que, mesmo sendo os únicos no Brasil e no mundo a
+          ensinar essas técnicas, o nosso curso de formação custaria
+          <span class="font-weight-bold">menos de 5 MIL REAIS</span>. Para
+          garantir uma vaga na
+          <span class="font-weight-bold"
+            >Formação Online de Análise Corporal do O Corpo Explica e encontrar
+            a solução para os problemas da vida no formato do corpo das
+            pessoas</span
+          >, você vai precisar investir apenas:
+        </p>
+  
+        <h2 class="text-white mb-5"><ins>12 x de R$ 340,71</ins></h2>
+
+        <h5 class="text-warning px-4 w-lg-75 mx-auto mb-5">
+          Aperte no botão abaixo e tente conseguir uma vaga das poucas vagas
+          disponíveis
+        </h5>
+  
+        <button class="btn btn-block btn-success btn-lg text-white" data-toggle="modal" data-target="#buy-form-modal">
+          >> Sim, Quero Fazer Minha Inscrição Agora
+        </button>
       </div>
-    </div>
+    </section>
+    <!-- end Price sectio -->
 
-    <div class="container py-5">
-      <section class="py-4">
-        <h4 class="mb-4">Ajudamos você a ser aprovado nas melhores universidades no exterior</h4>
-        <div class="small-separator mb-4"></div>
-        <p>A Universidade do Intercâmbio trabalha para ajudar você a se preparar para as melhores oportunidades de estudar fora do país. </p>
-        <p>Aprenda com quem já viveue passou pelas principais etapas de instituições de ensino para conquistar as melhores oportunidades internacionais. Nosso foco é <strong>ajudar você a se preparar</strong> para alcançar o futuro dos seus sonhos.</p>
-      </section>
-
-      <section class="py-4">
-        <h4 class="mb-4">Descubra qual a melhor assinatura para o seu perfil</h4>
-        <div class="test-card">
-          <img class="logo" src="./static/website/images/logo-white.png" />
-          <div class="content">
-            <h2>Conquiste a oportunidade dos seus sonhos em 2021</h2>
-            <p class="mb-md-5">Dê o primeiro passo para atingir o futuro dos seus sonhos. Faça o teste e descubra o seu perfil de aluno.</p>
-            <button class="btn btn-success btn-lg">Fazer o teste agora!</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-5">
+    <!-- start testemony section-->
+    <section id="testemony" class="py-5 bg-light-texture">
+      <div class="text-center mb-5">
+        <h4>HISTÓRIAS INSPIRADORAS DO</h4>
+        <h1>O CORPO EXPLICA</h1>
+      </div>
+      <div class="container">
         <div class="row">
-          <div class="col-lg-7">
-            <h4 class="mb-5">Como funciona</h4>
-            <div class="d-flex flex-column how-it-works">
-              <div class="mb-3">
-                <span class="badge">1</span> Descubra o que mais combina com o  seu perfil
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/oMb4GXQpz78?rel=0"
+                  allowfullscreen
+                ></iframe>
               </div>
-              <div class="mb-3">
-                <span class="badge">2</span> Assine o plano que cabe no seu bolso
-              </div>
-              <div class="mb-3">
-                <span class="badge">3</span> Acesse todos os conteúdos disponíveis para o seu plano
-              </div>
-              <div class="mb-5">
-                <span class="badge">4</span> Conquiste seus objetivos!
-              </div>
-              <div>
-                <button class="btn btn-success btn-lg">Quero fazer o teste agora!</button>
-              </div>
+              <h6 class="text-center">Química/ Analista</h6>
+              <p class="text-center text-secondary">
+                Ela era química industrial, estava quase entrando em um cargo público, quando conheceu O Corpo Explica e mudou de carreira e de vida.
+              </p>
             </div>
           </div>
-          <div class="col-lg-5 text-right">
-            <img class="img-fluid" src="static/website/images/home/woman.png" />
-          </div>
-        </div>
-      </section>
-
-      <section class="py-4">
-        <h4 class="mb-4">O que nossos alunos dizem sobre nós</h4>
-        <div class="row testimonials">
-          <div class="col-lg-4">
-            <div class="card card-overflow">
-              <img class="overflow" src="static/website/images/home/testimonial-1.png" />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="mb-4">Recomendo muito, foi o melhor investimento que já fiz no meu futuro e pretendo continuar.</h5>
-                <strong class="text-secondary">Eduardo Lisboa</strong>
-                <small class="text-secondary">Assinante iAcademy</small>
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/PNbI6PkN-G4?rel=0"
+                  allowfullscreen
+                ></iframe>
               </div>
+              <h6 class="text-center">Nutricionista</h6>
+              <p class="text-center text-secondary">
+                Foi assim que essa nutricionista passou a entender seus pacientes de forma muito rápida e com isso aumentar a qualidade do seu trabalho. 
+              </p>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-overflow">
-              <img class="overflow" src="static/website/images/home/testimonial-2.png" />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="mb-4">Recomendo muito, foi o melhor investimento que já fiz no meu futuro e pretendo continuar.</h5>
-                <strong class="text-secondary">Luiza Silva</strong>
-                <small class="text-secondary">Assinante iAcademy</small>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card card-overflow">
-              <img class="overflow" src="static/website/images/home/testimonial-3.png" />
-              <div class="card-body d-flex flex-column text-center">
-                <h5 class="mb-4">Recomendo muito, foi o melhor investimento que já fiz no meu futuro e pretendo continuar.</h5>
-                <strong class="text-secondary">Nayara Suzuki</strong>
-                <small class="text-secondary">Assinante iAcademy</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-5">
-        <h4 class="mb-4">Postagens recentes</h4>
-        <div class="row articles">
-          <div class="col-lg-4">
-            <article class="card flex-fill">
-              <img src="./static/website/images/slide-1.png" class="card-img-top">
-              <div class="card-body">
-                <a href="blog-post.html" class="stretched-link text-dark text-decoration-none">
-                  <h5 class="card-title">Card title</h5>
-                </a>
-                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p>Some quick example text to build on the card title.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-lg-4">
-            <article class="card flex-fill">
-              <img src="./static/website/images/slide-1.png" class="card-img-top">
-              <div class="card-body">
-                <a href="blog-post.html" class="stretched-link text-dark text-decoration-none">
-                  <h5 class="card-title">Card title</h5>
-                </a>
-                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p>Some quick example text to build on the card title.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-lg-4">
-            <article class="card flex-fill">
-              <img src="./static/website/images/slide-1.png" class="card-img-top">
-              <div class="card-body">
-                <a href="blog-post.html" class="stretched-link text-dark text-decoration-none">
-                  <h5 class="card-title">Card title</h5>
-                </a>
-                <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p>Some quick example text to build on the card title.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <footer class="text-light">
-      <div class="container py-5">
-        <div class="row mb-5">
-          <div class="my-2 col-lg-4 col-md-6">
-            <strong class="mb-3 d-block">Baixe gratuitamente o nosso</strong>
-            <h4 class="mb-5">GUIA DEFINITIVO PARA INTERCÂMBIO 2021</h4>
-
-            <form>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Digite seu nome*">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Digite seu e-mail*">
-              </div>
-              <button class="btn btn-primary btn-block">Baixar o guia agora!</button>
-            </form>
-          </div>
-          <div class="my-2 offset-lg-1 col-lg col-md-6">
-            <div class="lead mb-4">Categorias</div>
-            <a href="#" class="footer-link">Bolsas</a>
-            <a href="#" class="footer-link">Idiomas</a>
-            <a href="#" class="footer-link">Inspiração</a>
-            <a href="#" class="footer-link">Estudar fora</a>
-            <a href="#" class="footer-link">Trabalhar fora</a>
-            <a href="#" class="footer-link">Provas</a>
-            <a href="#" class="footer-link">Mundo</a>
-            <a href="#" class="footer-link">Resumo da semana</a>
-            <a href="#" class="footer-link">Testes</a>
-            <a href="#" class="footer-link">Universidade</a>
-          </div>
-          <div class="my-2 col-lg col-md-6">
-            <div class="lead mb-4">Cursos</div>
-            <a class="footer-link" href="#">iAcademy</a>
-            <a class="footer-link" href="#">Mentoria em Grupo</a>
-            <a class="footer-link" href="#">Mentoria Premium</a>
-            <a class="footer-link" href="#">Plataforma de Bolsas</a>
-          </div>
-          <div class="my-2 col-lg col-md-6">
-            <div class="lead mb-4">Materiais Gratuitos</div>
-            <a class="footer-link" href="#">E-books</a>
-            <a class="footer-link" href="#">Podcast</a>
-            <a class="footer-link" href="#">Aulas Gratuitas</a>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
-            <img src="./static/website/images/logo-white.png" />
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/vdSWtiQBvYw?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Consultora de RH</h6>
+              <p class="text-center text-secondary">
+                Ela estava desempregada, mas aplicou o que aprendeu com O Corpo Explica, entendeu seu próprio potencial e se transformou em uma empreendedora de sucesso.
+              </p>
+            </div>
           </div>
-          <div class="col-lg-4 d-flex justify-content-center align-items-center my-2">
-            <small>© 2021 Universidade do Intercâmbio</small>
-          </div>
-          <div class="col-lg-4 social-links my-2">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/e_8rNFBE-bA?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Mentor criativo / analista corporal</h6>
+              <p class="text-center text-secondary">
+                Ele estava perdido, sem dinheiro, deprimido e com problemas no relacionamento. Mas com esse conhecimento foi capaz de transformar a vida e lucrar 59 mil reais em poucos meses.
+              </p>
+            </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/rFLJXUxE0i8?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Coach e Palestrante</h6>
+              <p class="text-center text-secondary">
+                Ela viu a vida ser transformada na relação com as pessoas que amava e também no aspecto profissional. Hoje, alcançou um novo patamar de sucesso.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/ZFm89Usu3no?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Pastor / analista corporal / psicólogo</h6>
+              <p class="text-center text-secondary">
+                Mesmo tendo feito muitos cursos e treinamentos na vida, foi só com esse que ele conseguiu se destravar, ganhar dinheiro e ser respeitado.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/fvwI2Dv_m_o?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Cirurgiã Dentista</h6>
+              <p class="text-center text-secondary">
+                Essa dentista com mais de 20 anos de carreira usou a Análise Corporal com seus pacientes e teve um grande salto no relacionamento profissional, mas também no pessoal.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/moFHRG8li28?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Nutricionista</h6>
+              <p class="text-center text-secondary">
+                Ele estava desconfiado, mas quando se abriu para essa descoberta científica viu sua vida mudar e começou a ganhar muito mais do que antes, trabalhando só pela internet.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/bPzV2S6Bqkc?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Pastora e Psicanalista</h6>
+              <p class="text-center text-secondary">
+                Esse ponto de virada fez ela gerar uma imensa mudança na vida de todas as pessoas que atendia e também na vida de seus familiares. 
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/_EbbXLKSzxo?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Coach</h6>
+              <p class="text-center text-secondary">
+                Ela precisava ser um espelho melhor para os próprios filhos, mas no processo conseguiu entender e curar suas próprias dores. Hoje, leva felicidade e resultados aos seus clientes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/o_3TzZgNBAk?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Corretor de seguros</h6>
+              <p class="text-center text-secondary">
+                Ele salvou a própria empresa, mas também fez muito mais do que isso: Conseguiu entender sua infelicidade, reestruturou seu trabalho e finalmente realizou seu sonho.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 ">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/p5NbSVroI2U?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Psicoterapeuta</h6>
+              <p class="text-center text-secondary">
+                Com esse conhecimento ele foi capaz de construir uma linda vida pós-HIV, além de usar sua carreira para ajudar seus pacientes a superarem as maiores dores.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center mb-4"
+            >
+              <div class="embed-responsive embed-responsive-16by9 mb-3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/5qSIuKm6j98?rel=0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h6 class="text-center">Coach Terapeuta</h6>
+              <p class="text-center text-secondary">
+                Foi assim que ela conseguiu ajudar seus clientes de forma muito mais completa, ter melhores resultados profissionais e ainda alcançar a harmonia familiar. 
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="container text-center mb-5">
+        <button class="btn btn-success btn-lg text-white" data-toggle="modal" data-target="#buy-form-modal">
+          >> Sim, Quero Fazer Minha Inscrição Agora
+        </button>
+      </div>
+    </section>
+    <!-- end testemony section-->
+
+    <!-- Warranty section-->
+    <section id="warranty" class="py-5">
+      <div class="container mb-5">
+          <div class="col-12 col-lg-8 mx-auto">
+              <img
+                class="img-fluid"
+                src="/static/website/images/warranty-seal.png"
+              />
+          </div>
+      </div>
+      <div class="container">
+        <h3 class="text-warning text-center mb-5">
+          Nesse treinamento eu quero te fazer uma proposta irrecusável
+        </h3>
+        <p class="text-white text-center">
+          Pois bem, a minha proposta é você fazer esse treinamento que vai te
+          dar a possibilidade de conquistar uma vida muito além do que você pode
+          imaginar.
+        </p>
+        <p class="text-white text-center">
+          Por isso, eu quero te dar a minha garantia
+          <span class="font-weight-bold"
+            >incondicional de 15 DIAS e ela funciona assim...</span
+          >
+        </p>
+        <p class="text-white text-center">
+          Se o treinamento não atender suas expectativas, você pode pedir seu
+          dinheiro de volta.
+        </p>
+        <p class="text-white text-center">
+          Você vai se inscrever agora na Formação O Corpo Explica e vai assistir
+          as aulas durante 15 dias e se dentro desse prazo você não ficar
+          <span class="font-weight-bold">100% Satisfeito</span>, eu vou te
+          devolver todo o seu investimento. Basta mandar um e-mail para nossa
+          equipe, <span class="font-weight-bold">O seu Risco é Zero!</span>
+        </p>
+      </div>
+    </section>
+    <!-- Warranty secton end -->
+
+    <footer class="text-light py-4">
+      <!-- teachers section -->
+      <section id="teachers" class="py-5">
+        <div class="text-center mb-5">
+          <h4 class="text-white">OS RESPONSÁVEIS</h4>
+          <h1>POR ISSO TUDO:</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 py-2">
+              <div class="professor-description-container">
+                <img
+                  class="img-fluid"
+                  src="/static/website/images/elton-cutted.png"
+                />
+                <div class="professor-text-container">
+                  <p class="text-white text-center">
+                    Especialista em Comunicação, Fundador da Escola Brasileira
+                    de Comunicação e Criador do Método Comunicativo Humanês. Ele
+                    é o responsável por trazer simplicidade, clareza e
+                    aplicabilidade para a explicação da Formação.
+                  </p>
+                  <div class="text-center">
+                    <h3>ELTON EULER</h3>
+                    <p class="text-white"><i>Fundador/Professor</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 py-2">
+              <div class="professor-description-container">
+                <img
+                  class="img-fluid"
+                  src="/static/website/images/vanessa-cutted.png"
+                />
+                <div class="professor-text-container">
+                  <p class="text-white text-center">
+                    Doutora em Psicologia pela USP, Pesquisadora e integrante do
+                    comitê Científico da Associação Mundial de Saúde Sexual. Na
+                    formação ela é responsável pelo rigor científico e pela
+                    profundidade do conhecimento.
+                  </p>
+                  <div class="text-center">
+                    <h3>VANESSA CESNIK</h3>
+                    <p class="text-white"><i>Fundador/Professor</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- teachers section end -->
+
+      <div class="container">
+        <div class="text-center mb-4">
+          <img
+            class="img-fluid"
+            src="/static/website/images/logo-oce-white.png"
+          />
+        </div>
+        <p class="text-center">
+          <a
+            class="text-light"
+            target="_blank"
+            href="https://ocorpoexplica.com.br/politica-de-privacidade/"
+            >Política de privacidade</a
+          >
+          |
+          <a
+            class="text-light"
+            target="_blank"
+            href="https://ocorpoexplica.com.br/termos-de-uso/"
+            >Termo de uso</a
+          ><br />
+          Desenvolvido por O CORPO EXPLICA® em 2021, todos os direitos
+          reservados.
+        </p>
       </div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src='static/website/js/jquery-3.4.1.min.js'></script>
-    <script src='static/website/js/popper.min.js'></script>
-    <script src='static/website/js/bootstrap.min.js'></script>
-    <script src='static/website/owl-carousel/owl.carousel.min.js'></script>
-    <script src='static/website/js/app.js'></script>
-    <script src='https://kit.fontawesome.com/e65cc5ebc5.js' crossorigin="anonymous"></script>
+    <div class="modal fade" id="buy-form-modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <form class="modal-content">
+          <div class="modal-header text-light">
+            <h5 class="modal-title text-center w-lg-75 mx-auto">PREENCHA SEUS DADOS ABAIXO PARA GARANTIR SUA VAGA:</h5>
+          </div>
+          <div class="modal-body px-lg-5 py-lg-4">
+            <div class="form-group">
+              <input id="name" class="form-control rounded-pill" placeholder="Nome" />
+              <span id="name_error" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <input id="email" type="email" class="form-control rounded-pill" placeholder="Email" />
+              <span id="email_error" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <input id="phone" type="tel" class="form-control rounded-pill" placeholder="Telefone com DDD" data-mask="(00) 0 0000-0000" />
+              <span id="phone_error" class="text-danger"></span>
+            </div>
+            <button class="btn btn-lg btn-success btn-block">
+              Garantir minha vaga
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="/static/website/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/website/js/popper.min.js"></script>
+    <script src="/static/website/js/bootstrap.min.js"></script>
+    <script src="/static/website/js/jquery.mask.min.js"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v9.0"
+      nonce="8ncuJbDe"
+    ></script>
+
+    <!-- Custom Javascript -->
+    <script src="/static/website/js/app-min.js?v=1.0.37"></script>
   </body>
 </html>
